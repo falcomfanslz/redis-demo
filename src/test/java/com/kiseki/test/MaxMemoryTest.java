@@ -1,22 +1,21 @@
 package com.kiseki.test;
 
 import org.junit.Test;
-import org.redisson.api.RBucket;
+
+import java.util.concurrent.TimeUnit;
 
 public class MaxMemoryTest extends BaseTest{
-    private static final Integer BYTE_SIZE = 1024 * 1024 * 2;
+    private static final Integer BYTE_SIZE = 1024 * 100;
     @Test
     public void test(){
+        redissonClient.getKeys().flushdb();
         byte[] byte1 = new byte[BYTE_SIZE];
-        byte[] byte2 = new byte[BYTE_SIZE];
-        byte[] byte3 = new byte[BYTE_SIZE];
-        redissonClient.getBucket("byte1").set(byte1);
-        redissonClient.getBucket("byte2").set(byte2);
-        redissonClient.getBucket("byte3").set(byte3);
-        redissonClient.getBucket("byte4").set(byte3);
-        redissonClient.getBucket("byte5").set(byte3);
-        redissonClient.getBucket("byte6").set(byte3);
-        redissonClient.getBucket("byte7").set(byte3);
-        redissonClient.getBucket("byte8").set(byte3);
+        for(int i = 0 ; i < 20; i ++){
+            System.out.println(i);
+            redissonClient.getBucket("byte" + i).set(byte1, i + 1, TimeUnit.SECONDS);
+            if(i < 10){
+                redissonClient.getBucket("byte" + i).get();
+            }
+        }
     }
 }

@@ -12,4 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class BaseTest {
     @Autowired
     protected RedissonClient redissonClient;
+
+    protected void flushdb(){
+        redissonClient.getKeys().flushdb();
+    }
 }
