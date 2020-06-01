@@ -1,5 +1,4 @@
 */target/*
-!.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
 .apt_generated
@@ -31,5 +30,3 @@ nbdist/
 .dockerignore
 .kube
 target/
-qt-database/src/main/resources/mybatis-generator-*
-!qt-database/src/main/resources/mybatis-generator-example.xml
