@@ -8,7 +8,7 @@ public class MaxMemoryTest extends BaseTest{
     private static final Integer BYTE_SIZE = 1024 * 100;
     @Test
     public void test(){
-        redissonClient.getKeys().flushdb();
+        this.flushdb();
         byte[] byte1 = new byte[BYTE_SIZE];
         for(int i = 0 ; i < 20; i ++){
             System.out.println(i);

@@ -8,7 +8,7 @@ public class BloomFilterTest extends BaseTest{
     public void test(){
         this.flushdb();
 
-        RBloomFilter<String> bloomFilter = redissonClient.getBloomFilter("bloom-test2");
+        RBloomFilter<String> bloomFilter = redissonClient.getBloomFilter("bloom-test");
         bloomFilter.tryInit(1500, 0.03);
         for(int i = 0; i < 1000; i++){
             bloomFilter.add("a" + i);
@@ -23,6 +23,6 @@ public class BloomFilterTest extends BaseTest{
                 count++;
             }
         }
-        System.out.println(count);
+        System.out.println("wrong count:" + count);
     }
 }
