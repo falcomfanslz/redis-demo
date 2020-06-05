@@ -1,19 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07528545-ddd0-4e4a-ab70-3fc6ae2dcb77" name="Default Changelist" comment="" />
+    <list default="true" id="07528545-ddd0-4e4a-ab70-3fc6ae2dcb77" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/cluster/docker-redis-cluster.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/cluster/redis-cluster.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/cluster/redis-cluster.tmpl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/redis-normal-slave.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/sentinel/redis-sentinel.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/sentinel/redis/docker-redis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/sentinel/redis/redis.tmpl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel1.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel2.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel3.conf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/redis-config/sentinel/sentinel/docker-redis-sentinel.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kiseki/test/ClusterTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kiseki/test/HyperLogLogTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kiseki/test/LockTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kiseki/test/PubSubTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kiseki/test/SentinelTest.java" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/falco.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/document/config.md" afterPath="$PROJECT_DIR$/document/config.md" />
+      <change beforePath="$PROJECT_DIR$/redistest.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kiseki/redission/RedissonConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/kiseki/redission/RedissonConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kiseki/test/MaxMemoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/kiseki/test/MaxMemoryTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kiseki/test/TransactionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/kiseki/test/TransactionTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kiseki/MainApplication.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kiseki/redission/RedissonConfig.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/redistest.kotlin_module" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kiseki/test/BaseTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kiseki/test/BloomFilterTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/kiseki/test/MaxMemoryTest.class" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="sentinel1.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel1.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sentinel2.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel2.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sentinel3.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel3.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sentinel.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClusterTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/ClusterTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HyperLogLogTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/HyperLogLogTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="20" column="161" lean-forward="false" selection-start-line="20" selection-start-column="161" selection-end-line="20" selection-end-column="161" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LockTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/LockTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="32" column="2" lean-forward="false" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SentinelTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/SentinelTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/TransactionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="NewLua" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>yewuanquan_guard_workflow</find>
+      <find>node</find>
+      <find>17379</find>
+      <find>16379</find>
+      <find>123</find>
+      <find>192.168.128.1</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kiseki/test/BloomFilterTest.java" />
+        <option value="$PROJECT_DIR$/redis-config/redis-normal-slave" />
+        <option value="$PROJECT_DIR$/redis-config/redis-cluster.tmpl" />
+        <option value="$PROJECT_DIR$/redis-config/redis-cluster-config.sh.lua" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kiseki/test/MaxMemoryTest.java" />
+        <option value="$PROJECT_DIR$/document/config.md" />
+        <option value="$PROJECT_DIR$/redis-config/cluster/redis-cluster.tmpl" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/docker-redis-mentinel.yml" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/config/sentinel.conf.lua" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/config/sentinel.conf" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/docker-redis.yml" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/docker-redis-sentinel.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/redis-config/cluster/docker-redis-cluster.yml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kiseki/test/SentinelTest.java" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel3.conf" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel2.conf" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel1.conf" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/redis/docker-redis.yml" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/redis/redis.tmpl" />
+        <option value="$PROJECT_DIR$/redis-config/sentinel/redis-sentinel.sh" />
+        <option value="$PROJECT_DIR$/redis-config/cluster/redis-cluster.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kiseki/redission/RedissonConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kiseki/test/PubSubTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kiseki/test/TransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kiseki/test/ClusterTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kiseki/test/HyperLogLogTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/kiseki/test/LockTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -22,7 +232,155 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1680" />
+    <option name="y" value="-224" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
+  </component>
   <component name="ProjectId" id="1cbzW3AwVuSNA4j2KZIPhcclWuZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="document" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redis-config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redis-config" type="462c0819:PsiDirectoryNode" />
+              <item name="cluster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redis-config" type="462c0819:PsiDirectoryNode" />
+              <item name="sentinel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redis-config" type="462c0819:PsiDirectoryNode" />
+              <item name="sentinel" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redis-config" type="462c0819:PsiDirectoryNode" />
+              <item name="sentinel" type="462c0819:PsiDirectoryNode" />
+              <item name="sentinel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="redis-config" type="462c0819:PsiDirectoryNode" />
+              <item name="sentinel" type="462c0819:PsiDirectoryNode" />
+              <item name="sentinel" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kiseki" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kiseki" type="462c0819:PsiDirectoryNode" />
+              <item name="redission" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="redis-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="redis-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -39,6 +397,14 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.kiseki" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/redis-config/sentinel/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/redis-config/sentinel/sentinel" />
+      <recent name="$PROJECT_DIR$/redis-config/sentinel/redis" />
+      <recent name="$PROJECT_DIR$/redis-config/cluster" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -52,95 +418,151 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BloomFilterTest.test">
-    <configuration name="BloomFilterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="redistest" />
-      <extension name="coverage">
+  <component name="RunManager" selected="JUnit.HyperLogLogTest.test">
+    <configuration name="ClusterTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.kiseki.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="redis-test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.kiseki.test" />
-      <option name="MAIN_CLASS_NAME" value="com.kiseki.test.BloomFilterTest" />
+      <option name="MAIN_CLASS_NAME" value="com.kiseki.test.ClusterTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
-    <configuration name="MaxMemoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="redistest" />
-      <extension name="coverage">
+    <configuration name="HyperLogLogTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.kiseki.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="redis-test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.kiseki.test" />
+      <option name="MAIN_CLASS_NAME" value="com.kiseki.test.HyperLogLogTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="MaxMemoryTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.kiseki.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="redis-test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.kiseki.test" />
       <option name="MAIN_CLASS_NAME" value="com.kiseki.test.MaxMemoryTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
-    <configuration name="PlayGround.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="redistest" />
-      <extension name="coverage">
+    <configuration name="PubSubTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.kiseki.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="redis-test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.kiseki.test" />
-      <option name="MAIN_CLASS_NAME" value="com.kiseki.test.PlayGround" />
+      <option name="MAIN_CLASS_NAME" value="com.kiseki.test.PubSubTest" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
-    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="redistest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kiseki.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kiseki.MainApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlayGround.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="redistest" />
-      <extension name="coverage">
+    <configuration name="SentinelTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.kiseki.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="redis-test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.kiseki.test" />
-      <option name="MAIN_CLASS_NAME" value="com.kiseki.test.PlayGround" />
+      <option name="MAIN_CLASS_NAME" value="com.kiseki.test.SentinelTest" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MaxMemoryTest.test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ClusterTest.test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SentinelTest.test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PubSubTest.test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.HyperLogLogTest.test" />
+    </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.BloomFilterTest.test" />
-        <item itemvalue="JUnit.MaxMemoryTest.test" />
-        <item itemvalue="JUnit.PlayGround.test" />
-        <item itemvalue="Spring Boot.MainApplication" />
-        <item itemvalue="TestNG.PlayGround.test" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HyperLogLogTest.test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PubSubTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SentinelTest.test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ClusterTest.test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MaxMemoryTest.test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -154,10 +576,686 @@
       <updated>1590812108523</updated>
       <workItem from="1590812113433" duration="11961000" />
       <workItem from="1590914317728" duration="1290000" />
+      <workItem from="1590977668934" duration="39219000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1590995670760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590995670761</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Default Changelist">
+      <created>1590995725893</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590995725893</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Default Changelist">
+      <created>1591007852465</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591007852465</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="HyperLogLogTest_test - 2020.06.05 at 15h 49m 32s.xml">
+      <configuration name="HyperLogLogTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HyperLogLogTest_test - 2020.06.05 at 15h 50m 41s.xml">
+      <configuration name="HyperLogLogTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HyperLogLogTest_test - 2020.06.05 at 15h 53m 19s.xml">
+      <configuration name="HyperLogLogTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HyperLogLogTest_test - 2020.06.05 at 15h 54m 27s.xml">
+      <configuration name="HyperLogLogTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PubSubTest_test - 2020.06.05 at 11h 03m 58s.xml">
+      <configuration name="PubSubTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PubSubTest_test - 2020.06.05 at 11h 06m 13s.xml">
+      <configuration name="PubSubTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PubSubTest_test - 2020.06.05 at 11h 32m 19s.xml">
+      <configuration name="PubSubTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SentinelTest_test - 2020.06.04 at 14h 47m 16s.xml">
+      <configuration name="SentinelTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SentinelTest_test - 2020.06.04 at 14h 48m 43s.xml">
+      <configuration name="SentinelTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SentinelTest_test - 2020.06.04 at 15h 15m 08s.xml">
+      <configuration name="SentinelTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="39219000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1680" y="-224" width="2560" height="1440" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39955357" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaCheck" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49255952" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980143" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="14" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="21" column="37" lean-forward="false" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.13.0/redisson-3.13.0.jar!/org/redisson/api/RedissonClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="206" column="53" lean-forward="false" selection-start-line="206" selection-start-column="35" selection-end-line="206" selection-end-column="53" />
+          <folding>
+            <marker date="1590977846563" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1590977846563" expanded="false" signature="140:341" ph="..." />
+            <marker date="1590977846563" expanded="true" signature="2788:2806" ph="/**...*/" />
+            <marker date="1590977846563" expanded="true" signature="6373:6391" ph="/**...*/" />
+            <marker date="1590977846563" expanded="true" signature="6451:6469" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/redisson/redisson/3.13.0/redisson-3.13.0.jar!/org/redisson/api/TransactionOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <marker date="1590977846563" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1590977846563" expanded="true" signature="435:442" ph="{}" />
+            <marker date="1590977846563" expanded="true" signature="491:502" ph=" { " />
+            <marker date="1590977846563" expanded="true" signature="534:540" ph=" }" />
+            <marker date="1590977846563" expanded="false" signature="578:589" ph=" { " />
+            <marker date="1590977846563" expanded="false" signature="617:623" ph=" }" />
+            <marker date="1590977846563" expanded="true" signature="700:783" ph="{...}" />
+            <marker date="1590977846563" expanded="false" signature="818:829" ph=" { " />
+            <marker date="1590977846563" expanded="false" signature="855:861" ph=" }" />
+            <marker date="1590977846563" expanded="true" signature="926:998" ph="{...}" />
+            <marker date="1590977846563" expanded="false" signature="1034:1045" ph=" { " />
+            <marker date="1590977846563" expanded="false" signature="1071:1077" ph=" }" />
+            <marker date="1590977846563" expanded="true" signature="1171:1271" ph="{...}" />
+            <marker date="1590977846563" expanded="true" signature="1358:1445" ph="{...}" />
+            <marker date="1590977846563" expanded="false" signature="1479:1490" ph=" { " />
+            <marker date="1590977846563" expanded="false" signature="1514:1520" ph=" }" />
+            <marker date="1590977846563" expanded="false" signature="1550:1561" ph=" { " />
+            <marker date="1590977846563" expanded="false" signature="1581:1587" ph=" }" />
+            <marker date="1590977846563" expanded="true" signature="1663:1871" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster/7004/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/MaxMemoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster/7379/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster/7380/data/nodes.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster/7384/data/nodes.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster/7380/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.3.0.RELEASE/spring-boot-autoconfigure-2.3.0.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="246" column="23" lean-forward="false" selection-start-line="246" selection-start-column="23" selection-end-line="246" selection-end-column="23" />
+          <folding>
+            <marker date="1590977735843" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1590977735843" expanded="false" signature="173:291" ph="..." />
+            <marker date="1590977735843" expanded="true" signature="293:348" ph="@{...}" />
+            <marker date="1590977735843" expanded="true" signature="899:906" ph="{}" />
+            <marker date="1590977735843" expanded="false" signature="936:947" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="968:974" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1017:1028" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1053:1059" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1087:1098" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1114:1120" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1156:1167" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1182:1188" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1217:1228" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1245:1251" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1289:1300" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1317:1323" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1356:1367" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1388:1394" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1440:1451" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1476:1482" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1508:1519" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1536:1542" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1577:1588" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1605:1611" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1639:1650" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1666:1672" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1709:1720" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1735:1741" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1787:1798" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1821:1827" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1861:1872" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1892:1898" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="1933:1944" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="1967:1973" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="2023:2034" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="2063:2069" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="2120:2131" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="2152:2158" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="2222:2233" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="2258:2264" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="2313:2324" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="2344:2350" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="2411:2422" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="2445:2451" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="2496:2507" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="2525:2531" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="2580:2591" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="2611:2617" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="2651:4425" ph="{...}" />
+            <marker date="1590977735843" expanded="true" signature="2893:2904" ph="{}" />
+            <marker date="1590977735843" expanded="false" signature="2950:2965" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="2993:3003" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="3069:3084" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="3123:3133" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="3180:3195" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="3212:3222" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="3278:3293" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="3310:3320" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="3381:3396" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="3416:3426" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="3464:4419" ph="{...}" />
+            <marker date="1590977735843" expanded="true" signature="3619:3634" ph="{}" />
+            <marker date="1590977735843" expanded="false" signature="3707:3726" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="3746:3760" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="3802:4409" ph="{...}" />
+            <marker date="1590977735843" expanded="true" signature="3921:3940" ph="{}" />
+            <marker date="1590977735843" expanded="false" signature="3985:4008" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="4027:4045" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="4101:4124" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="4145:4163" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="4208:4231" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="4252:4270" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="4329:4352" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="4377:4395" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="4457:4730" ph="{...}" />
+            <marker date="1590977735843" expanded="true" signature="4526:4537" ph="{}" />
+            <marker date="1590977735843" expanded="false" signature="4584:4599" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="4616:4626" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="4682:4697" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="4714:4724" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="4765:5442" ph="{...}" />
+            <marker date="1590977735843" expanded="true" signature="4894:4905" ph="{}" />
+            <marker date="1590977735843" expanded="false" signature="4940:4955" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="4974:4984" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="5030:5045" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="5066:5076" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="5116:5131" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="5149:5159" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="5209:5224" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="5243:5253" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="5290:5305" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="5326:5336" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="5386:5401" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="5426:5436" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="5476:5981" ph="{...}" />
+            <marker date="1590977735843" expanded="true" signature="5578:5589" ph="{}" />
+            <marker date="1590977735843" expanded="false" signature="5629:5644" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="5662:5672" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="5722:5737" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="5756:5766" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="5808:5823" ph=" { " />
+            <marker date="1590977735843" expanded="true" signature="5848:5858" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="5917:5932" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="5965:5975" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="6012:7247" ph="{...}" />
+            <marker date="1590977735843" expanded="true" signature="6247:6258" ph="{}" />
+            <marker date="1590977735843" expanded="false" signature="6291:6306" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="6326:6336" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="6381:6396" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="6419:6429" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="6462:6477" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="6497:6507" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="6552:6567" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="6590:6600" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="6635:6650" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="6672:6682" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="6731:6746" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="6773:6783" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="6821:6836" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="6856:6866" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="6916:6931" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="6954:6964" ph=" }" />
+            <marker date="1590977735843" expanded="false" signature="7018:7033" ph=" { " />
+            <marker date="1590977735843" expanded="false" signature="7069:7079" ph=" }" />
+            <marker date="1590977735843" expanded="true" signature="7162:7241" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document/config.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="304">
+            <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster/7002/data/nodes.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/redis-normal-slave.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/redis-5mb.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster/7001/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/docker-redis-sentinel.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/redis/servers/7002/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/redis/servers/7003/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/redis/servers/7001/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/redis/docker-redis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/redis/redis.tmpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/redis-sentinel.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/docker-redis-cluster.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="20" column="55" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/cluster/redis-cluster.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-test.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1487">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kiseki/redission/RedissonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/PubSubTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/BloomFilterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="84" lean-forward="false" selection-start-line="10" selection-start-column="84" selection-end-line="10" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/SentinelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/TransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/ClusterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/HyperLogLogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="161" lean-forward="false" selection-start-line="20" selection-start-column="161" selection-end-line="20" selection-end-column="161" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/kiseki/test/LockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="2" lean-forward="false" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel1.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel2.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel3.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-config/sentinel/sentinel/config/sentinel.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>redis-test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
