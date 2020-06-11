@@ -1,8 +1,12 @@
+rm -rf redis-sentinel
 for port in `seq 7001 7003`; do \
-    mkdir -p ./redis/servers/${port}/conf \
-    && PORT=${port} envsubst < ./redis/redis.tmpl > ./redis/servers/${port}/conf/redis.conf; \
+    mkdir -p ./redis-sentinel/servers/${port}/conf \
+    && PORT=${port} IP=${port: -1} envsubst < ./redis.tmpl > ./redis-sentinel/servers/${port}/conf/redis.conf; \
     done
 
-docker-compose -f redis/docker-redis.yml up -d
+mkdir redis-sentinel/config
+cp ./sentinel.conf ./redis-sentinel/config/sentinel1.conf
+cp ./sentinel.conf ./redis-sentinel/config/sentinel2.conf
+cp ./sentinel.conf ./redis-sentinel/config/sentinel3.conf
 
-docker-compose -f sentinel/docker-redis-sentinel.yml up -d
+docker-compose -f docker-compose.yml up -d

@@ -2,6 +2,7 @@
 package com.kiseki.test;
 
 import org.junit.Test;
+import org.redisson.api.RBucket;
 import org.redisson.api.RHyperLogLog;
 
 import java.text.DecimalFormat;
@@ -11,6 +12,7 @@ public class HyperLogLogTest extends BaseTest{
     @Test
     public void test(){
         this.flushdb();
+
         String format="0.00";
         DecimalFormat dec = new DecimalFormat(format);
 
