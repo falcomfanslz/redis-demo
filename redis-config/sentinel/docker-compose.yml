@@ -4,9 +4,6 @@ services:
   master:
     image: redis
     container_name: redis-master
-    networks:
-     redis-sentinel-network:
-        ipv4_address: 172.18.0.11
     ports:
       - 7001:7001
     volumes:
@@ -15,36 +12,27 @@ services:
   slave1:
     image: redis
     container_name: redis-slave-1
-    networks:
-     redis-sentinel-network:
-        ipv4_address: 172.18.0.12
     ports:
       - 7002:7002
     volumes:
       - ./redis-sentinel/servers/7002/conf/redis.conf:/etc/redis/redis.conf
-    command: redis-server /etc/redis/redis.conf --slaveof master 7001
+    command: redis-server /etc/redis/redis.conf --slaveof redis-master 7001
     depends_on:
       - master
   slave2:
     image: redis
     container_name: redis-slave-2
-    networks:
-     redis-sentinel-network:
-        ipv4_address: 172.18.0.13
     ports:
       - 7003:7003
     volumes:
       - ./redis-sentinel/servers/7003/conf/redis.conf:/etc/redis/redis.conf
-    command: redis-server /etc/redis/redis.conf --slaveof master 7001
+    command: redis-server /etc/redis/redis.conf --slaveof redis-master 7001
     depends_on:
       - master
 
   sentinel1:
     image: redis
     container_name: redis-sentinel-1
-    networks:
-     redis-sentinel-network:
-        ipv4_address: 172.18.0.14
     ports:
       - "26379:26379"
     volumes:
@@ -56,9 +44,6 @@ services:
   sentinel2:
     image: redis
     container_name: redis-sentinel-2
-    networks:
-     redis-sentinel-network:
-        ipv4_address: 172.18.0.15
     ports:
       - "26380:26379"
     volumes:
@@ -71,9 +56,6 @@ services:
   sentinel3:
     image: redis
     container_name: redis-sentinel-3
-    networks:
-     redis-sentinel-network:
-        ipv4_address: 172.18.0.16
     ports:
        - "26381:26379"
     volumes:
@@ -81,10 +63,3 @@ services:
     command: redis-sentinel /etc/redis/sentinel.conf
     depends_on:
       - master
-
-networks:
-  redis-sentinel-network:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.18.0.0/16

@@ -38,6 +38,8 @@ public class RedissonConfig {
         SentinelServersConfig sentinelServersConfig = config.useSentinelServers();
         redisProperties.getSentinel().getNodes().forEach(sentinelServersConfig::addSentinelAddress);
         sentinelServersConfig.setMasterName(redisProperties.getSentinel().getMaster());
+        sentinelServersConfig.setCheckSentinelsList(false);
         return Redisson.create(config);
     }
+
 }
