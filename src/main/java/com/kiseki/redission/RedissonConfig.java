@@ -16,7 +16,7 @@ public class RedissonConfig {
     @Autowired
     private RedisProperties redisProperties;
 
-//    @Bean
+    @Bean
     public RedissonClient redissonClient(){
         Config config = new Config();
         String redisUrl = String.format("redis://%s:%s",redisProperties.getHost()+"",redisProperties.getPort()+"");
@@ -32,13 +32,14 @@ public class RedissonConfig {
         redisProperties.getCluster().setMaxRedirects(3);
         return Redisson.create(config);
     }
-    @Bean
+//    @Bean
     public RedissonClient redissonClientSentinel(){
         Config config = new Config();
         SentinelServersConfig sentinelServersConfig = config.useSentinelServers();
         redisProperties.getSentinel().getNodes().forEach(sentinelServersConfig::addSentinelAddress);
         sentinelServersConfig.setMasterName(redisProperties.getSentinel().getMaster());
         sentinelServersConfig.setCheckSentinelsList(false);
+        sentinelServersConfig.setScanInterval(1000);
         return Redisson.create(config);
     }
 

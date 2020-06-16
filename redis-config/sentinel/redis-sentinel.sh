@@ -5,8 +5,8 @@ for port in `seq 7001 7003`; do \
     done
 
 mkdir redis-sentinel/config
-cp ./sentinel.conf ./redis-sentinel/config/sentinel1.conf
-cp ./sentinel.conf ./redis-sentinel/config/sentinel2.conf
-cp ./sentinel.conf ./redis-sentinel/config/sentinel3.conf
+for port in `seq 26379 26381`; do \
+    PORT=${port} envsubst < ./sentinel.tmpl > ./redis-sentinel/config/sentinel${port}.conf; \
+    done
 
 docker-compose -f docker-compose.yml up -d
